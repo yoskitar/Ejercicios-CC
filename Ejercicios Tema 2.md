@@ -9,29 +9,26 @@ Ejecutamos el siguiente comando para la instalación del entorno virtual nvm.
 ~~~
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 ~~~
+![NVM instalado](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_installed.png)
 ### Uso de nvm
 Con el siguiente comando, se instala automáticamente la última versión existente:
 ~~~
 nvm install node
 ~~~
+![NVM instlar lv](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_node_lv.png)
+
+![NVM use node](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_use_node_lv.png)
+
+Podemos emplear el siguiente comando para conocer una lista de las diferentes versiones que podremos instalar con el anterior comando:
+~~~
+nvm ls-remote
+~~~
+![NVM versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_version_4_Lminor.png)
+
 Si queremos especificar la versión a instalar, empleamos la siguiente orden:
 ~~~
 nvm install <x.x.x> #<major,minor,path>
 ~~~
-Además, podemos emplear el siguiente comando para conocer una lista de las diferentes versiones que podremos instalar con el anterior comando:
-~~~
-nvm ls-remote
-~~~
-### Ejemplos
-### Nvm instalado
-![NVM instalado](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_installed.png)
-### Node Latest Version
-![NVM instlar lv](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_node_lv.png)
-### Use Node Latest Version
-![NVM use node](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_use_node_lv.png)
-### Listado de versiones
-![NVM versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_version_4_Lminor.png)
-### Instalación de versiones específicas
 ![NVM instalar versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm-install-versions.png)
-### Run de versiones específicas
+
 ![NVM run node version](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_run_version.png)
