@@ -23,9 +23,15 @@ Además, podemos emplear el siguiente comando para conocer una lista de las dife
 nvm ls-remote
 ~~~
 ### Ejemplos
+### Nvm instalado
 ![NVM instalado](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_installed.png)
+### Node Latest Version
 ![NVM instlar lv](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_node_lv.png)
-![NVM use node](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_use_node.png)
+### Use Node Latest Version
+![NVM use node](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_use_node_lv.png)
+### Listado de versiones
 ![NVM versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_version_4_Lminor.png)
+### Instalación de versiones específicas
 ![NVM instalar versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm-install-versions.png)
-![NVM run node version](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_run version.png)
+### Run de versiones específicas
+![NVM run node version](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_run_version.png)
