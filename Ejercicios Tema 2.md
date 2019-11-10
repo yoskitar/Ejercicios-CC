@@ -32,3 +32,38 @@ nvm install <x.x.x> #<major,minor,path>
 ![NVM instalar versiones](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm-install-versions.png)
 
 ![NVM run node version](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/nvm_run_version.png)
+
+## Ejercicio 2.- Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
+Ilustraremos el ejercicios con dos ejemplo realizados. El primero se corresponde con un proyecto personal desarrollado:
+
+![Package.json](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/package_json.png)
+
+EL segundo ejemplo se corresponde con el package.json definido para el [curso realizado de TDD](https://github.com/Miguel-y-Oscar/Geolocalizaciones-de-medios-sociales):
+
+![Package.json GeoTag](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/package_json_geotag.png)
+
+En estos ejemplos observamos como se definen las dependencias externas de nuestro proyecto que serán necesarias de instalar para que nuestro servicio pueda funcionar adecuadamente como se espera. Además nos permite definir una serie de ordenes en la sección 'scripts', que ejecutará los comandos que le indiquemos cuando dicho script sea llamado, por ejemplo 'npm test' que ejecutará los comandos definidos 'npx nyc --reporter=lcov nyc --reporter=lcov mocha && npx codecov'.
+
+## Ejercicio 4.- Para la aplicación que se está haciendo, escribir una serie de aserciones y probar que efectivamente no fallan. Añadir tests para una nueva funcionalidad, probar que falla y escribir el código para que no lo haga. A continuación, ejecutarlos desde mocha (u otro módulo de test de alto nivel), usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vamos a necesitar un poco más adelante.
+Para el microservicio que nos encontramos desarrollando, hemos definido los siguientes casos de test entre otros muchos. En los ilustrados, se comprueba concretamente que las mutaciones fallen atendiendo a un mal número de argumentos de entrada o salida y tipos correspondientes. Para ello estamos empleando mocha conjuntamente con un paquete de test llamado [easygraphql-tester](https://easygraphql.com/docs/easygraphql-tester/usage) que nos permite realizar las asserciones.
+
+![Test](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/tests.png)
+
+El segundo ejemplo que se muestra a continuación es el desarrollado para el proyecto [GeoTag](https://github.com/Miguel-y-Oscar/Geolocalizaciones-de-medios-sociales).
+
+![Test GeoTag](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/tests_geotag.png)
+
+Estas herramientas nos permiten comprobar el correcto funcionamiento de las funciones o clases definidas, permitiendonos realizar unas buenas prácticas mediante lo que se conoce como programación defensiva, y poder testear tanto el buen funcionamiento, como el erróneo, devolviendose estados de error cuando efectivamente deben de darse.
+
+## Ejercicio 5.- Darse de alta en un servicio de integración continua. Muchos están conectados con GitHub por lo que puedes usar directamente el usuario ahí, a través de un proceso de autorización, acceder al contenido e incluso informar del resultado de los tests. Activar el repositorio en el que se vaya a aplicar la integración continua. Travis permite hacerlo directamente desde tu configuración; en otros se dan de alta desde la web de GitHub. Crear un fichero de configuración para que se ejecute la integración y añadirlo al repositorio.
+Integración de [travisCI](https://travis-ci.org/) con el repositorio y autorización de usuario:
+
+![TravisCI](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/travisCI.png)
+
+![WebHook](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/webhook.png)
+
+Contenido del fichero de configuración para integración continua, donde especificacmos desde el lenguaje, como las versiones del lenguaje con las que ejecutaremos los tests elaborados, indicando el script a ejecutar, que en nuestro caso es npm test, donde test se encuentra definido en el package.json como una serie de comandos a ejecutar para ejecutar nuestros test. Previo a ello, será necesario instalar las dependencias de nuestro proyecto para que se ejecute correctamente, indicado con la orden npm install.
+
+![Travis.yml](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/travis_yml.png)
+
+
