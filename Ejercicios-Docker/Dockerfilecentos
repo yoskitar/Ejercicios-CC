@@ -1,0 +1,17 @@
+#Imagen y versión que usaremos de base
+FROM centos:latest
+#Instalamos node y npm ya que no vienen por defecto instalados
+#en la imagen elegida
+RUN yum install -y epel-release
+RUN yum install -y nodejs npm
+RUN yum install -y gcc-c++ make
+#Establecemos el directorio de trabajo
+WORKDIR /usr/src/app
+#Copiamos el contenido del código de la aplicación 
+#al directorio de trabajo definido dentro del contenedor
+COPY . .
+#Definimos la acción a ejecutar, que en nuestro caso,
+#será el comando start definido en los scripts del 
+#package.json de nuestro microservicio, encargado de 
+#iniciar el microservicio.
+CMD ["npm","start"]
