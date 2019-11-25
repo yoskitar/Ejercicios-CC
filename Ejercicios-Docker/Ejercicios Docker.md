@@ -4,4 +4,4 @@ que nos mostrará un mensaje por pantalla.
 
 El tamaño de los contenedores creados es el siguiente:
 
-![Docker Images ](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/dockerimages.png)
+![Docker Images ](https://raw.githubusercontent.com/yoskitar/Ejercicios-CC/master/imagenes/docker_images.png)
