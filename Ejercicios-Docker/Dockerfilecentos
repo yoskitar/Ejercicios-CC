@@ -4,7 +4,6 @@ FROM centos:latest
 #en la imagen elegida
 RUN yum install -y epel-release
 RUN yum install -y nodejs npm
-RUN yum install -y gcc-c++ make
 #Establecemos el directorio de trabajo
 WORKDIR /usr/src/app
 #Copiamos el contenido del código de la aplicación 
