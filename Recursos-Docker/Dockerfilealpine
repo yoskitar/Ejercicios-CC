@@ -1,7 +1,9 @@
 #Imagen y versión que usaremos de base
 FROM alpine:latest
 #Instalamos node y npm ya que no vienen por defecto instalados
-#en la imagen elegida
+#en la imagen elegida. Con la opción --no-cache ahorramos más espacio
+#al evitar hacer update, lo que nos permite no tener que almacenar los 
+#índices.
 RUN apk add --no-cache nodejs npm
 #Establecemos el directorio de trabajo
 WORKDIR /usr/src/app
