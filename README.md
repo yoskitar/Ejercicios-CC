@@ -5,3 +5,4 @@ Respositorio de ejercicios para la asignatura de Cloud Computing.
 * [Tema 2: Desarrollo basado en pruebas](https://github.com/yoskitar/Ejercicios-CC/blob/master/Ejercicios%20Tema%202.md)
 * [Tema 3: Microservicios](https://github.com/yoskitar/Ejercicios-CC/blob/master/Ejercicios%20Tema%203.md)
 * [Tema 4: Contenedores](https://github.com/yoskitar/Ejercicios-CC/blob/master/Ejercicios%20Tema%204.md)
+* [Tema 5: Creación y provisionamiento de VMs](https://github.com/yoskitar/Ejercicios-CC/blob/master/Ejercicios%20Tema%205.md)
